@@ -1,8 +1,9 @@
 {
-  "name": "maptiler-geocoder-node",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@swim/maptiler-geocoder-node",
+  "version": "0.0.1",
+  "description": "Provides a nodejs geocoder built upon the fantastic maptiler service.",
+  "repository": "swim/maptiler-geocoder-node",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest",
     "type-check": "tsc --noEmit",
@@ -13,6 +14,9 @@
   },
   "author": "Nicholas James Cole",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "devDependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
