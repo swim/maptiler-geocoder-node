@@ -1,4 +1,5 @@
 import * as request from 'request'
+import * as http from 'http'
 import { MaptilerGeocoderParameters } from './typings'
 
 export default class MaptilerGeocoderClientFactory {
@@ -16,21 +17,21 @@ export default class MaptilerGeocoderClientFactory {
     this.parameters = Parameters
   }
 
-  getClient() {
+  public getClient() {
     return this.client
   }
 
-  getParameters() {
+  public getParameters() {
     return this.parameters
   }
 
-  async queue(queries: Array<string>) {
+  public async queue(queries: Array<string>) {
     return Promise.all(queries.map((query: string) => {
       return this.query(query)
     }))
   }
 
-  async query(query: string) {
+  public async query(query: string) {
     return this.client.get(`/geocoding/${encodeURIComponent(query)}.json`, {
       qs: this.parameters
     })
