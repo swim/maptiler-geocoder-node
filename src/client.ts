@@ -25,13 +25,13 @@ export default class MaptilerGeocoderClientFactory {
     return this.parameters
   }
 
-  public async queue(queries: Array<string>) {
+  public async queue(queries: Array<string>): Promise<request.Request[]> {
     return Promise.all(queries.map((query: string) => {
       return this.query(query)
     }))
   }
 
-  public async query(query: string) {
+  public async query(query: string): Promise<request.Request> {
     return this.client.get(`/geocoding/${encodeURIComponent(query)}.json`, {
       qs: this.parameters
     })
