@@ -1,5 +1,4 @@
 import * as request from 'request'
-import * as http from 'http'
 import { MaptilerGeocoderParameters } from './typings'
 
 export default class MaptilerGeocoderClientFactory {
