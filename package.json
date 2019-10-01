@@ -1,6 +1,6 @@
 {
   "name": "maptiler-geocoder-node",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Provides a nodejs geocoder built upon the fantastic maptiler service.",
   "repository": "swim/maptiler-geocoder-node",
   "main": "lib/index.js",
