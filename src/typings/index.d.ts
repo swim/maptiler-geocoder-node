@@ -1,16 +1,16 @@
-export interface MaptilerGeocoderParameters {
+/*export interface MaptilerGeocoderParameters {
   key: string | undefined;
   language?: string | Array<string>;
   proximity?: Array<number>;
   bbox?: Array<number>;
-}
+}*/
 
-/*export interface MaptilerGeocoderParameters {
+export interface MaptilerGeocoderParameters {
   key: string | undefined;
   language?: string | Array<string>;
-  proximity?: Position;
-  bbox?: BBox;
-}*/
+  proximity?: GeoJSON.Position;
+  bbox?: GeoJSON.BBox;
+}
 
 export interface MaptilerGeocoderQuery {
   query: string;

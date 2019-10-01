@@ -30,7 +30,8 @@
       "node",
       "jest",
       "request",
-      "request-promise-native"
+      "request-promise-native",
+      "geojson"
     ],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true
