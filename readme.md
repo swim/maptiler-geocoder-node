@@ -1,4 +1,10 @@
+Typescript flavoured library providing access to the Maptiler Geocoding service.
+
+```shell
+npm i maptiler-geocoder-node
 ```
+
+```typescript
 import { config } from 'dotenv'
 import { resolve } from 'path'
 import { createClient } from 'maptiler-geocoder-node'
